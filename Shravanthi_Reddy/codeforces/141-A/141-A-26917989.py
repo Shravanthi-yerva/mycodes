@@ -1,0 +1,14 @@
+a=input()
+b=input()
+c=input()
+d=a+b
+d=list(d)
+d.sort()
+c=list(c)
+c.sort()
+d=''.join(d)
+c=''.join(c)
+if(d==c):
+	print("YES")
+else:
+	print("NO")

@@ -1,0 +1,20 @@
+n=int(input())
+if(n>=0):
+	print(n)
+else:
+	k=len(str(n))
+	l=list(str(n))
+	a=l
+	if(l[k-2]>l[k-1]):
+		del(a[k-2])
+		if(("").join(a)=="-0"):
+			print("0")
+		else:
+			print(("").join(a))
+		
+	else:
+		del(a[k-1])
+		if(("").join(a)=="-0"):
+			print("0")
+		else:
+			print(("").join(a))
